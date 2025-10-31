@@ -1,0 +1,42 @@
+{
+  "name": "trading-bot",
+  "version": "1.0.0",
+  "description": "Automated trading bot with news scraping, real-time market data, and trade execution",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc -w",
+    "clean": "rimraf dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "trading",
+    "bot",
+    "finnhub",
+    "websocket",
+    "news-scraper"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.0.0",
+    "@types/nodemailer": "^7.0.3",
+    "@types/ws": "^8.5.0",
+    "jest": "^30.2.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "nodemailer": "^6.9.0",
+    "ws": "^8.14.0"
+  }
+}
